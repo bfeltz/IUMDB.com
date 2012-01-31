@@ -1,0 +1,134 @@
+body {
+	margin-left: 20em;
+	margin-right: 20em;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: #F4F4F4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+div.content {
+	width: 713px;
+}
+
+div.banner {
+	width: 713px; 
+	height: 119px;
+	background-image: url("images/iumdb_header.jpg");
+	background-position: 0% 1%;
+	background-repeat: no-repeat; 
+	-moz-box-shadow: 2px 3px 10px 0px #000;
+	-webkit-box-shadow: 2px 3px 10px 0px #000;
+	box-shadow: 2px 3px 10px 0px #000;
+}
+
+div.search {
+	float: right;
+	padding-right: 5px;
+	margin-top: 90px;
+	height: 25px;
+	width: 160px;
+}
+
+div.search-button {
+	float: right;
+	height: 25px;
+	padding-right: 7px;
+}
+
+div.nav {
+	width: 713px; 
+	height: 38px;
+	background-image: url("images/nav_background.jpg");
+	background-repeat: no-repeat;
+	-moz-box-shadow: 2px 3px 10px 0px #000;
+	-webkit-box-shadow: 2px 3px 10px 0px #000;
+	box-shadow: 2px 3px 10px 0px #000; 
+}
+
+div.dvd-subnav, div.vhs-subnav {
+	width: 713px; 
+	height: 22px;
+	background-image: url("images/subnav.jpg");
+	background-repeat: no-repeat;
+	-moz-box-shadow: 2px 3px 10px 0px #000;
+	-webkit-box-shadow: 2px 3px 10px 0px #000;
+	box-shadow: 2px 3px 10px 0px #000; 
+	margin-top: 2px;
+}
+
+a.vhs, a.dvd {
+	height: 27px;
+	width: 50px;
+	font-size: 16px;
+	margin: 10px 10px 0 10px;
+	float: left;
+	text-decoration: none;
+	color: #000;
+	
+}
+
+a.dvd-genre, a.dvd-actor, a.dvd-az, a.vhs-genre, a.vhs-actor, a.vhs-az {
+	height: 30px;
+	width: 50px;
+	font-size: 16px;
+	float: left;
+	margin: 2px 10px 0 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+#current {
+	height: 30px;
+	width: 50px;
+	font-size: 16px;
+	text-align: center;
+	margin: 10px 10px 0px 10px;
+	text-decoration: none;
+	color: #000;
+	background-color: #c7c6c5;
+}
+
+div.main-content {
+	width: 713px; 
+	height: 1103px;
+	background-image: url("images/shelf.jpg");
+	background-repeat: no-repeat; 
+	-moz-box-shadow: 2px 3px 10px 0px #000;
+	-webkit-box-shadow: 2px 3px 10px 0px #000;
+	box-shadow: 2px 3px 10px 0px #000;
+}
+
+div.shelf1 {
+	height: 217px;
+	width: 713px;
+}
+
+div.shelf2 {
+	height: 217px;
+	width: 713px;
+}
+
+div.shelf3 {
+	height: 220px;
+	width: 713px;
+}
+
+div.shelf4 {
+	height: 220px;
+	width: 713px;
+}
+
+div.shelf4 {
+	height: 220px;
+	width: 713px;
+}
+
+img.shelf-content {
+	margin: 45px 12px 0px 11px;
+	-moz-box-shadow: 2px 3px 10px 0px #000;
+	-webkit-box-shadow: 2px 3px 10px 0px #000;
+	box-shadow: 2px 3px 10px 0px #000;
+}
+

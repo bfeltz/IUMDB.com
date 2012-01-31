@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>IUMDB</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</head>
+<body>
+	<div class="content">
+	<div class="banner">
+		<div class= "search">
+			<form>
+				<input type="text" name="query" />
+				<div class="search-button">
+					<input type="image" src="images/search.png" class="submit" value="Search" alt="go" />
+				</div>
+			</form>
+		</div>
+	</div>
+	</br>
+	<div class="nav">
+		<a href="#" class="dvd">DVD</a>
+		<a href="#" class="vhs">VHS</a>
+	</div>
+	
+	<div class="dvd-subnav">
+		<a href="#" class="dvd-genre">Genres</a>
+		<a href="#" class="dvd-actor">Actors</a>
+		<a href="#" class="dvd-az">A-Z</a>
+	</div>
+	
+	<div class="vhs-subnav">
+		<a href="#" class="vhs-genre">Genres</a>
+		<a href="#" class="vhs-actor">Actors</a>
+		<a href="#" class="vhs-az">A-Z</a>
+	</div>
+	</br>
+	<!-- the main content will most likely be an empty list that will be filled from the database using javascript and php -->
+	<div class="main-content">
+		<!-- for current presentation purposes the images are hardcoded -->
+		<!-- need to make a carrousel effect with jquery -->
+		<div class="shelf1">
+			<img class="shelf-content" src="images/movie1.jpg" alt="movie1" />
+			<img class="shelf-content" src="images/movie2.jpg" alt="movie2" />
+			<img class="shelf-content" src="images/movie3.jpg" alt="movie3" />
+			<img class="shelf-content" src="images/movie6.jpg" alt="movie4" />
+			<img class="shelf-content" src="images/movie5.jpg" alt="movie5" />
+		</div>
+		<div class="shelf2">
+			<img class="shelf-content" src="images/movie6.jpg" alt="movie6" />
+			<img class="shelf-content" src="images/movie3.jpg" alt="movie7" />
+			<img class="shelf-content" src="images/movie2.jpg" alt="movie8" />
+			<img class="shelf-content" src="images/movie5.jpg" alt="movie9" />
+			<img class="shelf-content" src="images/movie1.jpg" alt="movie10" />
+		</div>
+		<div class="shelf3">
+			<img class="shelf-content" src="images/movie1.jpg" alt="movie11" />
+			<img class="shelf-content" src="images/movie2.jpg" alt="movie12" />
+			<img class="shelf-content" src="images/movie3.jpg" alt="movie13" />
+			<img class="shelf-content" src="images/movie4.jpg" alt="movie14" />
+			<img class="shelf-content" src="images/movie5.jpg" alt="movie15" />
+		</div>
+		<div class="shelf4">
+			<img class="shelf-content" src="images/movie6.jpg" alt="movie16" />
+			<img class="shelf-content" src="images/movie5.jpg" alt="movie17" />
+			<img class="shelf-content" src="images/movie4.jpg" alt="movie18" />
+			<img class="shelf-content" src="images/movie1.jpg" alt="movie19" />
+			<img class="shelf-content" src="images/movie2.jpg" alt="movie20" />
+		</div>
+		<div class="shelf5">
+			<img class="shelf-content" src="images/movie1.jpg" alt="movie21" />
+			<img class="shelf-content" src="images/movie2.jpg" alt="movie22" />
+			<img class="shelf-content" src="images/movie3.jpg" alt="movie23" />
+			<img class="shelf-content" src="images/movie4.jpg" alt="movie24" />
+			<img class="shelf-content" src="images/movie5.jpg" alt="movie25" />
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  	$('.dvd-subnav').hide();
+			$('.vhs-subnav').hide();
+			
+			$('.dvd').click(function(e){
+				e.preventDefault();
+				$('.dvd').attr('id', 'current');
+				$('.vhs').attr('id', '');
+				$('.vhs-subnav').hide();
+				$('.dvd-subnav').slideDown('fast', function() {
+				        // Animation complete
+				});
+			});
+			
+			$('.vhs').click(function(e){
+				e.preventDefault();
+				$('.vhs').attr('id', 'current');
+				$('.dvd').attr('id', '');
+				$('.dvd-subnav').hide();
+				$('.vhs-subnav').slideDown('fast', function() {
+				        // Animation complete
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>
